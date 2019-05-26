@@ -7,146 +7,185 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+        body {
+          background-image: url("https://image.freepik.com/free-vector/blurred-background-with-light-colors_1034-245.jpg");
+          width: 100%;
+        height: 100px;
+        background-size: cover;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2; 
+        
+        
+    
+        }
+        .container {
+            font-weight:bold; 
+        }
+        </style>
 </head>
 <body>
-<div class="container">
+
+<div  class="container">
   <h2>CHHATTISGARH</h2>
-  <form >
+
+
   <p>select one for 1st plot:</p>
+
   <form id="form1">
     <label class="radio-inline">
-      <input type="radio" name="optradio" >BALRAMPUR
+      <input type="radio" name="optradio" value="BALRAMPUR">BALRAMPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">BILASPUR
+      <input type="radio" name="optradio" value="BILASPUR">BILASPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">BIZAPUR
+      <input type="radio" name="optradio" value="BIZAPUR">BIZAPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >DANTEWARA
+      <input type="radio" name="optradio" value="DANTEWARA">DANTEWARA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">DHAMTARI
+      <input type="radio" name="optradio" value="DHAMTARI">DHAMTARI
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">DURG
+      <input type="radio" name="optradio" value="DURG">DURG
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >GRP RAIPUR
+      <input type="radio" name="optradio" value="GRP RAIPUR">GRP RAIPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">JAGDALPUR
+      <input type="radio" name="optradio" value="JAGDALPUR">JAGDALPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">JANJGIR
+      <input type="radio" name="optradio" value="JANJGIR">JANJGIR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >JASHPUR
+      <input type="radio" name="optradio" value="JASHPUR">JASHPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >KANKER
+      <input type="radio" name="optradio" value="KANKER">KANKER
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">KAWARDHA
+      <input type="radio" name="optradio" value="KAWARDHA">KAWARDHA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >KORBA
+      <input type="radio" name="optradio" value="KORBA">KORBA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">KORIYA
+      <input type="radio" name="optradio" value="KORIYA">KORIYA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">MAHASAMUND
+      <input type="radio" name="optradio" value="MAHASAMUND">MAHASAMUND
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >RAIGARH
+      <input type="radio" name="optradio" value="RAIGARH">RAIGARH
     <label class="radio-inline">
-      <input type="radio" name="optradio">RAIPUR
+      <input type="radio" name="optradio" value="RAIPUR">RAIPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">RAJNANDGAON
+      <input type="radio" name="optradio" value="RAJNANDGAON">RAJNANDGAON
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >SARGUJA
+      <input type="radio" name="optradio" value="SARGUJA">SARGUJA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >TOTAL
+      <input type="radio" name="optradio" checked value="TOTAL">TOTAL
     </label>
   </form>
+
   <br><br><br>
   <p>select one for 2nd plot:</p>
-  <form id="form2">
-    <label  class="radio-inline">
-      <input type="radio" name="optradio" >BALRAMPUR
+  <form id="form2" onsubmit="return false">
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="BALRAMPUR">BALRAMPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">BILASPUR
+      <input type="radio" name="optradio" value="BILASPUR">BILASPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">BIZAPUR
+      <input type="radio" name="optradio" value="BIZAPUR">BIZAPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >DANTEWARA
+      <input type="radio" name="optradio" value="DANTEWARA">DANTEWARA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">DHAMTARI
+      <input type="radio" name="optradio" value="DHAMTARI">DHAMTARI
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">DURG
+      <input type="radio" name="optradio" value="DURG">DURG
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >GRP RAIPUR
+      <input type="radio" name="optradio" value="GRP RAIPUR">GRP RAIPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">JAGDALPUR
+      <input type="radio" name="optradio" value="JAGDALPUR">JAGDALPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">JANJGIR
+      <input type="radio" name="optradio" value="JANJGIR">JANJGIR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >JASHPUR
+      <input type="radio" name="optradio" value="JASHPUR">JASHPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >KANKER
+      <input type="radio" name="optradio" value="KANKER">KANKER
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">KAWARDHA
+      <input type="radio" name="optradio" value="KAWARDHA">KAWARDHA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >KORBA
+      <input type="radio" name="optradio" value="KORBA">KORBA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >KORIYA
+      <input type="radio" name="optradio" value="KORIYA">KORIYA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">MAHASAMUND
+      <input type="radio" name="optradio" value="MAHASAMUND">MAHASAMUND
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >RAIGARH
+      <input type="radio" name="optradio" value="RAIGARH">RAIGARH
     <label class="radio-inline">
-      <input type="radio" name="optradio">RAIPUR
+      <input type="radio" name="optradio" value="RAIPUR">RAIPUR
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">RAJNANDGAON
+      <input type="radio" name="optradio" value="RAJNANDGAON">RAJNANDGAON
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio" >SARGUJA
+      <input type="radio" name="optradio" value="SARGUJA">SARGUJA
     </label>
     <label class="radio-inline">
-      <input type="radio" name="optradio">TOTAL
+      <input type="radio" name="optradio" checked value="TOTAL">TOTAL
     </label>
   </form>
 <div>
 <!--<button id="submit" onclick="afterClicking()">SUBMIT</button>-->
+<br><br><br>
+
 <button id="submit">Submit</button>
 </div>
-</form>
+
 </div>
+
+
+
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
 </body>
+
+
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script type="text/javascript" src="j.js" ></script>
+
+
 </html>
